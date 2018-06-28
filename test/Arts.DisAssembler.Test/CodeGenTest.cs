@@ -10,6 +10,7 @@ namespace Arts.DisAssembler.Test
         [Theory]
         [InlineData(@"..\..\..\testAssembly\CsharpConsoleApp.dll", @"..\..\..\..\outputCode\csProj")]
         [InlineData(@"..\..\..\testAssembly\VBConsoleApp.dll", @"..\..\..\..\outputCode\vbProj")]
+        [InlineData(@"..\..\..\testAssembly\VBConsoleApp20.exe", @"..\..\..\..\outputCode\vbProj20")]
         public void GenerateCodeFromAssembly(string assemblyfileName, string outputDir )
         {
             if (Directory.Exists(outputDir))
